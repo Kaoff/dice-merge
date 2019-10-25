@@ -70,7 +70,7 @@ export const Dice: FC<IDiceProps> = ({ dice, animate, holderId }) => {
         }, 600);
 
         return () => clearTimeout(timer);
-    }, [dice.animation])
+    }, [dice.animation, dispatch, holderId])
 
     return (
         <StyledDice className={`animated ${dice.animation} faster`} ref={drag} multiplier={dice.multiplier}>

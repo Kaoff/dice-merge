@@ -37,15 +37,6 @@ export const DiceContainer: FC = () => {
         });
     }
 
-    const onAnimationEnd = (holderId: number) => {
-        dispatch<IDiceAction>({
-            type: 'DICE_ANIM_RESET',
-            payload: {
-                holderId,
-            }
-        })
-    }
-
     return (
         <StyledDiceContainerWrapper>
             <div>
