@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/dice-merge/static/css/main.ee80a495.chunk.css",
+    "main.js": "/dice-merge/static/js/main.008a6801.chunk.js",
+    "main.js.map": "/dice-merge/static/js/main.008a6801.chunk.js.map",
+    "runtime-main.js": "/dice-merge/static/js/runtime-main.84d8ec69.js",
+    "runtime-main.js.map": "/dice-merge/static/js/runtime-main.84d8ec69.js.map",
+    "static/js/2.d775c6e5.chunk.js": "/dice-merge/static/js/2.d775c6e5.chunk.js",
+    "static/js/2.d775c6e5.chunk.js.map": "/dice-merge/static/js/2.d775c6e5.chunk.js.map",
+    "index.html": "/dice-merge/index.html",
+    "precache-manifest.995a827a0bc54b7843f427f1ade3b785.js": "/dice-merge/precache-manifest.995a827a0bc54b7843f427f1ade3b785.js",
+    "service-worker.js": "/dice-merge/service-worker.js",
+    "static/css/main.ee80a495.chunk.css.map": "/dice-merge/static/css/main.ee80a495.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.84d8ec69.js",
+    "static/js/2.d775c6e5.chunk.js",
+    "static/css/main.ee80a495.chunk.css",
+    "static/js/main.008a6801.chunk.js"
+  ]
+}
