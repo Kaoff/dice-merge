@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/dice-merge/static/css/main.ee80a495.chunk.css",
-    "main.js": "/dice-merge/static/js/main.68dc1351.chunk.js",
-    "main.js.map": "/dice-merge/static/js/main.68dc1351.chunk.js.map",
+    "main.js": "/dice-merge/static/js/main.0f60f018.chunk.js",
+    "main.js.map": "/dice-merge/static/js/main.0f60f018.chunk.js.map",
     "runtime-main.js": "/dice-merge/static/js/runtime-main.84d8ec69.js",
     "runtime-main.js.map": "/dice-merge/static/js/runtime-main.84d8ec69.js.map",
     "static/js/2.d775c6e5.chunk.js": "/dice-merge/static/js/2.d775c6e5.chunk.js",
     "static/js/2.d775c6e5.chunk.js.map": "/dice-merge/static/js/2.d775c6e5.chunk.js.map",
     "index.html": "/dice-merge/index.html",
-    "precache-manifest.1d8242ec9240cd74a262b47f626ac7be.js": "/dice-merge/precache-manifest.1d8242ec9240cd74a262b47f626ac7be.js",
+    "precache-manifest.e63f157cef62a59c335a102fa04696a3.js": "/dice-merge/precache-manifest.e63f157cef62a59c335a102fa04696a3.js",
     "service-worker.js": "/dice-merge/service-worker.js",
     "static/css/main.ee80a495.chunk.css.map": "/dice-merge/static/css/main.ee80a495.chunk.css.map"
   },
@@ -16,6 +16,6 @@
     "static/js/runtime-main.84d8ec69.js",
     "static/js/2.d775c6e5.chunk.js",
     "static/css/main.ee80a495.chunk.css",
-    "static/js/main.68dc1351.chunk.js"
+    "static/js/main.0f60f018.chunk.js"
   ]
 }
