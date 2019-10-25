@@ -54,7 +54,6 @@ export const DiceContainer: FC = () => {
                         diceHolders.map((dh, index) => (
                             <DiceHolder 
                                 holderId={index}
-                                onAnimationEnd={() => onAnimationEnd(index)}
                                 onDrop={item => onDiceDrop(item, index)}
                                 key={index}
                                 animate={animate}

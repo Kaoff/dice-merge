@@ -1,13 +1,15 @@
-import { IDice } from "../../models";
+import { IDice, EDiceAnimation } from "../../models";
 import React, { FC, useState, useEffect } from "react";
 import { StyledDice, StyledDiceRow, StyledDot } from "./index.style";
 import { useInterval } from "../../hooks/useInterval";
 import { useDrag } from 'react-dnd';
+import { useDispatch } from "react-redux";
+import { IDiceAction } from "../../redux/reducers/diceReducer";
 
 interface IDiceProps {
     dice: IDice;
+    holderId: number;
     animate: boolean;
-    onAnimationEnd: () => void;
 }
 
 const diceTemplates = [
@@ -43,8 +45,9 @@ const diceTemplates = [
     ],
 ]
 
-export const Dice: FC<IDiceProps> = ({ dice, animate, onAnimationEnd }) => {
+export const Dice: FC<IDiceProps> = ({ dice, animate, holderId }) => {
     const [animValue, setAnimValue] = useState<number>(1);
+    const dispatch = useDispatch();
 
     const [,drag] = useDrag({
         item: { type: 'DICE', dice },
@@ -55,12 +58,19 @@ export const Dice: FC<IDiceProps> = ({ dice, animate, onAnimationEnd }) => {
     }, animate ? 50 : null);
 
     useEffect(() => {
+        if (dice.animation === EDiceAnimation.None) return;
+
         const timer = setTimeout(() => {
-            onAnimationEnd();
-        }, 501);
+            dispatch<IDiceAction>({
+                type: 'DICE_ANIM_RESET',
+                payload: {
+                    holderId,
+                }
+            })
+        }, 600);
 
         return () => clearTimeout(timer);
-    }, [dice.animation, onAnimationEnd])
+    }, [dice.animation])
 
     return (
         <StyledDice className={`animated ${dice.animation} faster`} ref={drag} multiplier={dice.multiplier}>

@@ -9,10 +9,9 @@ interface IDiceHolderProps {
     holder: IDiceHolder;
     animate: boolean;
     onDrop: (item: DragObjectWithType & { dice: IDice }) => void;
-    onAnimationEnd: () => void;
 }
 
-export const DiceHolder: FC<IDiceHolderProps> = ({ holder, animate, onDrop, onAnimationEnd }) => {
+export const DiceHolder: FC<IDiceHolderProps> = ({ holder, animate, onDrop, holderId }) => {
 
     const [,drop] = useDrop<DragObjectWithType & { dice: IDice }, void, any>({
         accept: 'DICE',
@@ -33,7 +32,7 @@ export const DiceHolder: FC<IDiceHolderProps> = ({ holder, animate, onDrop, onAn
         <StyledDiceHolder className={animate && holder.dice ? 'animated tada' : ''} ref={drop}>
             {
                 holder.dice ? (
-                    <Dice onAnimationEnd={onAnimationEnd} dice={holder.dice} animate={animate} />
+                    <Dice holderId={holderId} dice={holder.dice} animate={animate} />
                 ) : ''
             }
         </StyledDiceHolder>
