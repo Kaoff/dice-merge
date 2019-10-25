@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1282c5e15c39c9d011a8e805c6faaf27",
+    "revision": "f890dee663c4d4aec3465a1c576cc81a",
     "url": "/dice-merge/index.html"
   },
   {
-    "revision": "ed5482dc212d01f7f33e",
+    "revision": "f83cc41d435eb4b84213",
     "url": "/dice-merge/static/css/main.ee80a495.chunk.css"
   },
   {
-    "revision": "21667b26e9232fc1468f",
-    "url": "/dice-merge/static/js/2.d1ce7f84.chunk.js"
+    "revision": "2f6235f02358e4a222fe",
+    "url": "/dice-merge/static/js/2.d775c6e5.chunk.js"
   },
   {
-    "revision": "ed5482dc212d01f7f33e",
-    "url": "/dice-merge/static/js/main.2c15dd4c.chunk.js"
+    "revision": "f83cc41d435eb4b84213",
+    "url": "/dice-merge/static/js/main.68dc1351.chunk.js"
   },
   {
     "revision": "290c325142bec6464bca",
